@@ -1,0 +1,17 @@
+//-----IMPORTS-----/
+@import "_variables";
+
+li {
+	display: inline-block;
+}
+
+li:last-child {
+	float: right;
+}
+
+nav.bottom-nav {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
