@@ -1,0 +1,66 @@
+//-----IMPORTS-----//
+@import "_variables";
+
+//-----USERS-CODE-----//
+@include font-face(junction_regularregular, '../fonts/Junction-webfont');
+
+%font-rule {
+	font-family: $junction;
+	color: $primary;
+	margin: 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-font-feature-settings: "kern=1"; 
+	-ms-font-feature-settings: "kern" 1; 
+	-o-font-feature-settings: "kern"; 
+	-webkit-font-feature-settings:"kern"; 
+	font-feature-settings:"kern";
+	text-rendering: optimizeLegibility;
+}
+
+@mixin root-reset {
+	font-size: $root;
+	line-height: $body-baseline;	
+}
+
+@mixin paragraph {
+	font-size: $root;
+	line-height: $body-baseline;
+}
+
+@mixin heading-6 {
+	font-size: 1.2rem;
+	line-height: $body-baseline;
+	font-weight: 400;
+}
+
+@mixin heading-5 {
+	font-size: 1.4rem;
+	line-height: $body-baseline;
+}
+
+@mixin heading-4 {
+	font-size: 1.6rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-3 {
+	font-size: 1.8rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-2 {
+	font-size: 2.1rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-1 {
+	font-size: 2.4rem;
+	line-height: $display-baseline;
+}	
+
+@mixin link {
+	@include paragraph;
+	text-decoration: none;
+	text-align: center;
+}

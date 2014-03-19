@@ -1,8 +1,88 @@
 //-----IMPORTS-----/
+@import "reset";
+@import "_font-face";
 @import "_variables";
+@import "_globals";
+
+//-----USERS-CODE-----//
+//TYPOGRAPHY
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+	@extend %font-rule;
+}
+
+p {
+	@include paragraph;
+}
+
+h6 {
+	@include heading-6;
+}
+
+h5 {
+	@include heading-5;
+}
+
+h4 {
+	@include heading-4;
+}
+
+h3 {
+	@include heading-3;
+}
+
+h2 {
+	@include heading-2;
+}
+
+h1 {
+	@include heading-1;
+}
+
+a {
+	@include link;
+}
+
+html {
+	@include root-reset;
+}
+
+//NAVIGATION
+
+nav  {
+	width: 100%;
+
+	div.logo-section {
+		width: 100%;
+		margin-top: $primary-spacing;
+		text-align: center;
+
+		img {
+			opacity: 0.5;
+		}		
+	}
+
+	ul.top {
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}	
+}
 
 li {
 	display: inline-block;
+	margin: $primary-spacing;
+}
+
+li:first-child {
+	text-align: left;
 }
 
 li:last-child {

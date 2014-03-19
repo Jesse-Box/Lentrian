@@ -24,7 +24,10 @@
     <![endif]-->
     <section id="container">
       <nav class="top-nav">
-        <ul>
+        <div class="logo-section">
+          <a href="index.php" id="logo"><img src="assests/img/lentrian.svg" alt="Logo"></a>
+        </div>
+        <ul class="top">
           <li><a href="#">collections</a></li>
           <li><a href="#">acquire</a></li>
         </ul>

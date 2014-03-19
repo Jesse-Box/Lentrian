@@ -1,5 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: junction_regularregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Junction-webfont.eot");
+  src: url("../fonts/Junction-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Junction-webfont.woff") format("woff"), url("../fonts/Junction-webfont.ttf") format("truetype"), url("../fonts/Junction-webfont.svg#junction_regularregular") format("svg"); }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "junction_regularregular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #222222;
+  margin: 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+p {
+  font-size: 16px;
+  line-height: 150%; }
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 150%; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 120%; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 120%; }
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 120%; }
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 120%; }
+
+a {
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  text-align: center; }
+
+html {
+  font-size: 16px;
+  line-height: 150%; }
+
+nav {
+  width: 100%; }
+  nav div.logo-section {
+    width: 100%;
+    margin-top: 24px;
+    text-align: center; }
+    nav div.logo-section img {
+      opacity: 0.5; }
+  nav ul.top {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+
 li {
-  display: inline-block; }
+  display: inline-block;
+  margin: 24px; }
+
+li:first-child {
+  text-align: left; }
 
 li:last-child {
   float: right; }
