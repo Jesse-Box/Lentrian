@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="assests/css/reset.css" type="text/css">
     <link rel="stylesheet" href="assests/css/main.css" type="text/css">
     <link rel="stylesheet" href="assests/css/print.css" type="text/css" media="print">
-    <link rel="stylesheet" href="styles/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <link rel="stylesheet" href="assests/css/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8">
     <script src="assests/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="assests/js/jquery.cycle.all.js" type="text/javascript"></script>
     <script src="assests/js/jquery.maximage.min.js" type="text/javascript"></script>
   </head>
@@ -32,7 +32,10 @@
           <li><a href="#">acquire</a></li>
         </ul>
       </nav>
-      <p>Hello world! This is HTML5 Boilerplate.</p>
+      <div id="maximage">
+        <img src="assests/img/Landscape-1.jpg" alt="" width="1400" height="1050" />
+        <img src="assests/img/5.jpg" alt="" width="1400" height="1050" />
+      </div>
       <nav class="bottom-nav">
         <ul>
           <li><a href="#">various</a></li>
@@ -40,8 +43,19 @@
         </ul>
       </nav>      
     </section>
-
-    
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        var imgs = $('#maximage img');
+        imgs.sort(function() { return 0.5 - Math.random() });
+        $('#maximage').html( imgs );
+        
+        $('#maximage').maximage({
+            cycleOptions: {
+                speed: 800
+            }
+        });
+      });
+    </script>
   </body>
 </html>
