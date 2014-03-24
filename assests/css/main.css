@@ -130,3 +130,7 @@ nav.bottom-nav {
   left: 0px;
   right: 0px;
   bottom: 0px; }
+
+section#collections {
+  width: 90%;
+  margin: 0 auto; }
