@@ -31,26 +31,6 @@
               },
           });
         });
-    </script>
-    <script type="text/javascript"> //Fresco Trigger
-      jQuery(document).ready(function($) {
-
-        $('#collection-1').bind('click', function(event) {
-          // stop default click behavior
-          event.preventDefault();
-
-          Fresco.show([
-            {
-            url: '../assests/img/Landscape-1-thumb.jpg',
-            caption: "Landscape-1-thumb" }, 
-
-            {
-            url: '../assests/img/5-thumb.jpg',
-            caption: "5-thumb.jpg" }
-            ]);
-        });
-        
-      });
-    </script>
+    </script>     
   </body>
 </html>
