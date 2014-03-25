@@ -1,4 +1,5 @@
-assests/.sass-cache/
-assests/img/
-assests/js/vendor
+.sass-cache/
+img/
+js/vendor
+css/skins
 favicon.ico

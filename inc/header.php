@@ -9,22 +9,22 @@
     <title><?php echo $PageTitle; ?></title>
     <meta name="description" content="">
     <!--<meta name="viewport" content="width=device-width">-->
-    <link rel="stylesheet" href="../assests/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="../assests/css/main.css" type="text/css">
-    <link rel="stylesheet" href="../assests/css/print.css" type="text/css" media="print">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
     <!--Max Image Stylesheet-->
-    <link rel="stylesheet" href="../assests/css/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8">
     <!--Fresco Stylesheet-->
-    <link rel="stylesheet" href="../assests/css/fresco.css" type="text/css" media="screen">
-    <script src="../assests/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/fresco.css" type="text/css" media="screen">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <!--Max Image Javascript-->
-    <script src="../assests/js/jquery.cycle.all.js" type="text/javascript"></script>
-    <script src="../assests/js/jquery.maximage.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+    <script src="js/jquery.maximage.min.js" type="text/javascript"></script>
     <!--Grid-a-licious Javascript-->
-    <script src="../assests/js/jquery.grid-a-licious.js" type="text/javascript"></script>
+    <script src="js/jquery.grid-a-licious.js" type="text/javascript"></script>
     <!--Fresco Javascript-->
-    <script type="text/javascript" src="../assests/js/fresco.js"></script>
+    <script type="text/javascript" src="js/fresco.js"></script>
     <script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   </head>
@@ -38,11 +38,11 @@
     <![endif]-->
     <nav class="top-nav">
         <div class="logo-section">
-          <a href="../index.php" id="logo"><img src="../assests/img/lentrian.svg" alt="Logo"></a>
+          <a href="index.php" id="logo"><img src="img/lentrian.svg" alt="Logo"></a>
         </div>
         <ul class="top">
-          <li><a href="../pages/collections.php">collections</a></li>
-          <li><a href="#">acquire</a></li>
+          <li><a href="collections.php">collections</a></li>
+          <li><a href="#">hello</a></li>
         </ul>
     </nav>
     <section id="<?php echo $Container; ?>">
