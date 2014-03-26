@@ -19,7 +19,7 @@
     </script>
     <script type="text/javascript"> //Grid-a-licious Trigger
         $(document).ready(function () {
-          $("#collections").gridalicious({
+          $("#various").gridalicious({
               gutter: 20,
               width: 400,
               animate: true,

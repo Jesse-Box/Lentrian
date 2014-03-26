@@ -54,63 +54,62 @@ body,
 #container {
 	@include root-reset;
 	@include flex-parent;
-
 	height: 100%;
+	width: 100%;
+}
+
+#collections {
+	@include flex-parent(row, no-wrap, center, center);
+	height: 100%;
+	width: 100%;
+
+	a {
+		margin: $secondary-spacing;
+
+		img {
+			width: 100%;
+		}
+	}
 }
 
 div#holder {
-	width: 80%;
-	height: 80%;
+	width: 85%;
+	height: 85%;
 	overflow: hidden;
 	margin: auto;
 }
 
 #maximage {
 	position: relative !important;
-	width: 100%;
 }
 
 //NAVIGATION
 
 nav  {
+	@include flex-parent (row);
 	width: 100%;
+	margin: $primary-spacing 0;
 
-	div.logo-section {
+	ul {
+		@include flex-parent (row, no-wrap, space-between, center);
 		width: 100%;
-		margin-top: $primary-spacing;
-		text-align: center;
-
-		img {
-			opacity: 0.5;
-		}		
 	}
+}
 
-	ul.top {
-		width: 100%;
-		position: absolute;
-		left: 0px;
-		top: 0px;
-	}	
+img#logo {
+	width: 200px;
+
+	@media screen and (max-width: $mobile) {
+		width: 100px;
+	}
 }
 
 li {
-	display: inline-block;
-	margin: $primary-spacing;
-}
+	margin: $secondary-spacing;
 
-li:first-child {
-	text-align: left;
-}
-
-li:last-child {
-	float: right;
-}
-
-nav.bottom-nav {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
+	a {
+		padding: $secondary-spacing;
+	}
 }
 
 //COLLECTION

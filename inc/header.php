@@ -37,12 +37,10 @@
       <script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     <nav class="top-nav">
-        <div class="logo-section">
-          <a href="index.php" id="logo"><img src="img/lentrian.svg" alt="Logo"></a>
-        </div>
         <ul class="top">
           <li><a href="collections.php">collections</a></li>
-          <li><a href="#">hello</a></li>
+          <li><a href="index.php"><img src="img/lentrian.svg" alt="Logo" id="logo"></a></li>
+          <li><a href="#">acquire</a></li>
         </ul>
     </nav>
     <section id="<?php echo $Container; ?>">

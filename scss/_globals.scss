@@ -8,10 +8,12 @@
 @include font-face(junction_regularregular, '../fonts/Junction-webfont');
 
 %font-rule {
-	font-family: $junction;
+	font-family: $courier;
+	font-weight: 400;
 	color: $primary;
 	margin: 0 0;
 	text-align: center;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1; 
