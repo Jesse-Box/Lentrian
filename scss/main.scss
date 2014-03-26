@@ -49,14 +49,30 @@ a {
 	@include link;
 }
 
-html {
+html,
+body,
+#container {
 	@include root-reset;
+
+	height: 100%;
+}
+
+div#holder {
+	width: 80%;
+	height: 80%;
+	overflow: hidden;
+	margin: auto;
+}
+
+#maximage {
+	position: relative !important;
 }
 
 //NAVIGATION
 
 nav  {
 	width: 100%;
+	position: fixed;
 
 	div.logo-section {
 		width: 100%;

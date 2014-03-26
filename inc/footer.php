@@ -7,15 +7,18 @@
     </nav>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
     <script type="text/javascript" charset="utf-8"> //Max Image Trigger
-      $(function() { 
-        var imgs = $('#maximage img');
-        imgs.sort(function() { return 0.5 - Math.random() });
-        $('#maximage').html( imgs );
-        
+      $(function(){
         $('#maximage').maximage({
-            cycleOptions: {
-                speed: 800
-            }
+          cycleOptions: {
+            fx: 'scrollHorz',
+            speed: 1000,
+            timeout: 5000,
+            prev: '#arrow_left',
+            next: '#arrow_right',
+            pause: 1
+          },
+          fillElement: '#holder',
+          backgroundSize: 'contain'
         });
       });
     </script>

@@ -96,12 +96,25 @@ a {
   text-decoration: none;
   text-align: center; }
 
-html {
+html,
+body,
+#container {
   font-size: 16px;
-  line-height: 150%; }
+  line-height: 150%;
+  height: 100%; }
+
+div#holder {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  margin: auto; }
+
+#maximage {
+  position: relative !important; }
 
 nav {
-  width: 100%; }
+  width: 100%;
+  position: fixed; }
   nav div.logo-section {
     width: 100%;
     margin-top: 24px;
