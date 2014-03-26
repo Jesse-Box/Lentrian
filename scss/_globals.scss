@@ -1,6 +1,9 @@
 //-----IMPORTS-----//
 @import "_variables";
 
+@import "_flex-box";
+
+
 //-----USERS-CODE-----//
 @include font-face(junction_regularregular, '../fonts/Junction-webfont');
 
@@ -63,4 +66,13 @@
 	@include paragraph;
 	text-decoration: none;
 	text-align: center;
+}
+
+//Flex-box
+@mixin flex-parent($direction: column, $wrap: nowrap, $justify-content: center, $vertical-align: center) {
+	@include display(flex);
+	@include flex-direction($direction);
+	@include flex-wrap($wrap);
+	@include justify-content($justify-content);
+	@include align-items($vertical-align);
 }

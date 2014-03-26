@@ -10,12 +10,7 @@
       $(function(){
         $('#maximage').maximage({
           cycleOptions: {
-            fx: 'scrollHorz',
-            speed: 1000,
-            timeout: 5000,
-            prev: '#arrow_left',
-            next: '#arrow_right',
-            pause: 1
+            speed: 500
           },
           fillElement: '#holder',
           backgroundSize: 'contain'
