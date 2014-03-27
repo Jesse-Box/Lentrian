@@ -8,18 +8,21 @@ include('inc/header.php'); ?>
 	class="item"
 	id="collection-1">
   <img src="img/collection-1-thumb.jpg" "alt=collection I">
+  <h6>Collection I</h6>
 </a>
 <a 
 	href="#" 
 	class="item"
 	id="collection-2">
   <img src="img/collection-2-thumb.jpg" "alt=collection II">
+  <h6>Collection II</h6>
 </a>
 <a 
 	href="#" 
 	class="item"
 	id="collection-3">
   <img src="img/collection-3-thumb.jpg" "alt=collection III">
+  <h6>Collection III</h6>
 </a>
 <script type="text/javascript"> //Fresco Collection-1 Trigger 
   jQuery(document).ready(function($) {

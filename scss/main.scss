@@ -58,11 +58,14 @@ body,
 	width: 100%;
 }
 
+#container {
+
+}
+
 #collections {
 	@include flex-parent(row, no-wrap, center, center);
 	height: 100%;
 	width: 100%;
-
 	a {
 		margin: $secondary-spacing;
 
@@ -98,6 +101,7 @@ nav  {
 
 img#logo {
 	width: 200px;
+	margin-left: -50px;
 
 	@media screen and (max-width: $mobile) {
 		width: 100px;
@@ -105,10 +109,18 @@ img#logo {
 }
 
 li {
+	@include link;
+	
 	margin: $secondary-spacing;
 
 	a {
+		opacity: 0.66;
 		padding: $secondary-spacing;
+	}
+
+	a:hover {
+		transition: 0.5s ease-in;
+		opacity: 1;
 	}
 }
 
@@ -117,4 +129,18 @@ li {
 section#collections {
 	width: 95%;
 	margin: 0 auto;
+
+	a {
+		opacity: 0.1;
+		padding: $secondary-spacing;
+	}
+
+	a:hover {
+		transition: 0.5s ease-in;
+		opacity: 1;
+	}
+}
+
+a > h6 {
+	margin-top: $secondary-spacing - 5px;
 }
