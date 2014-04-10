@@ -1,8 +1,7 @@
     </section>
     <nav class="bottom-nav">
       <ul>
-        <li><a href="#">various</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

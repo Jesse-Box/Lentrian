@@ -54,30 +54,28 @@ body,
 #container {
 	@include root-reset;
 	@include flex-parent;
-	height: 100%;
-	width: 100%;
+	@extend %full-height-and-width;
 }
 
-#container {
-
-}
-
-#collections {
+#collections, 
+#contact {
 	@include flex-parent(row, no-wrap, center, center);
-	height: 100%;
-	width: 100%;
+	@extend %full-height-and-width;
+	
 	a {
 		margin: $secondary-spacing;
 
 		img {
-			width: 100%;
+			width: $fluid;
 		}
 	}
 }
 
+//MAXIMAGE
+
 div#holder {
-	width: 85%;
-	height: 85%;
+	width: $fluid - 15%;
+	height: $fluid - 15%;
 	overflow: hidden;
 	margin: auto;
 }
@@ -89,19 +87,25 @@ div#holder {
 //NAVIGATION
 
 nav  {
-	@include flex-parent (row);
-	width: 100%;
+	@include flex-parent(row);
+	width: $fluid;
 	margin: $primary-spacing 0;
 
 	ul {
 		@include flex-parent (row, no-wrap, space-between, center);
-		width: 100%;
+		width: $fluid;
 	}
+}
+
+nav.bottom-nav > ul {
+	@include flex-parent (row, no-wrap, flex-end, center);
+	width: $fluid;
 }
 
 img#logo {
 	width: 200px;
 	margin-left: -50px;
+	margin-top: 5px;
 
 	@media screen and (max-width: $mobile) {
 		width: 100px;
@@ -110,7 +114,6 @@ img#logo {
 
 li {
 	@include link;
-	
 	margin: $secondary-spacing;
 
 	a {
@@ -119,7 +122,7 @@ li {
 	}
 
 	a:hover {
-		transition: 0.5s ease-in;
+		transition: $slow;
 		opacity: 1;
 	}
 }
@@ -127,20 +130,30 @@ li {
 //COLLECTION
 
 section#collections {
-	width: 95%;
+	width: $fluid - 5%;
 	margin: 0 auto;
 
-	a {
+	a.item {
 		opacity: 0.1;
 		padding: $secondary-spacing;
+
+		h6 {
+			margin-top: $secondary-spacing - 5px;
+		}
 	}
 
-	a:hover {
-		transition: 0.5s ease-in;
+	a.item:hover {
+		transition: $slow;
 		opacity: 1;
 	}
 }
 
-a > h6 {
-	margin-top: $secondary-spacing - 5px;
+//CONTACT
+
+section#contact {
+	@extend section#collections;
+
+	a {
+		@include heading-6;
+	}
 }
