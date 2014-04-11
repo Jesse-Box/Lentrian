@@ -9,7 +9,7 @@
       $(function(){
         $('#maximage').maximage({
           cycleOptions: {
-            speed: 500
+            speed: 1000
           },
           fillElement: '#holder',
           backgroundSize: 'contain'
@@ -18,9 +18,9 @@
     </script>
     <script type="text/javascript"> //Grid-a-licious Trigger
         $(document).ready(function () {
-          $("#various").gridalicious({
-              gutter: 20,
-              width: 400,
+          $("#acquire").gridalicious({
+              gutter: 4,
+              width: 100,
               animate: true,
               animationOptions: {
                       speed: 200,

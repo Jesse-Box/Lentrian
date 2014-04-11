@@ -148,6 +148,20 @@ section#collections {
 	}
 }
 
+//ACQUIRE
+
+section#acquire {
+	width: $fluid - 5%;
+	height: 100%;
+	display: block;
+
+	a.item {
+		display: inline-block;
+		margin: none;
+		padding: none;
+	}
+}
+
 //CONTACT
 
 section#contact {

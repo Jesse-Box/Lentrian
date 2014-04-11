@@ -40,7 +40,7 @@
         <ul class="top">
           <li><a href="collections.php">collections</a></li>
           <li><a href="index.php"><img src="img/lentrian.svg" alt="Logo" id="logo"></a></li>
-          <li><a href="#">acquire</a></li>
+          <li><a href="acquire.php">acquire</a></li>
         </ul>
     </nav>
     <section id="<?php echo $Container; ?>">

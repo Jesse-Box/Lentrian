@@ -360,6 +360,15 @@ section#collections, section#contact {
     transition: 0.5s ease-in;
     opacity: 1; }
 
+section#acquire {
+  width: 95%;
+  height: 100%;
+  display: block; }
+  section#acquire a.item {
+    display: inline-block;
+    margin: none;
+    padding: none; }
+
 section#contact a {
   font-size: 1.2rem;
   line-height: 150%;
