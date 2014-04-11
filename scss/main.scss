@@ -57,18 +57,11 @@ body,
 	@extend %full-height-and-width;
 }
 
-#collections, 
+#collections,
+#acquire, 
 #contact {
 	@include flex-parent(row, no-wrap, center, center);
 	@extend %full-height-and-width;
-	
-	a {
-		margin: $secondary-spacing;
-
-		img {
-			width: $fluid;
-		}
-	}
 }
 
 //MAXIMAGE
@@ -134,8 +127,13 @@ section#collections {
 	margin: 0 auto;
 
 	a.item {
+		margin: $secondary-spacing;
 		opacity: 0.1;
 		padding: $secondary-spacing;
+
+		img {
+			width: $fluid;
+		}
 
 		h6 {
 			margin-top: $secondary-spacing - 5px;
@@ -151,15 +149,24 @@ section#collections {
 //ACQUIRE
 
 section#acquire {
-	width: $fluid - 5%;
-	height: 100%;
-	display: block;
+	width: $fluid - 15%;
 
-	a.item {
-		display: inline-block;
-		margin: none;
-		padding: none;
-	}
+	section#col-wrapper {
+		@include flex-parent(row, no-wrap, center, flex-start);
+		section.flex-col {
+			@include flex-child(100px);
+			@include flex-parent(column, no-wrap, center, center);
+			margin: 4px;
+
+			a {
+				width: $fluid;
+
+				img {
+					width: $fluid;
+				}
+			}
+		}
+	}	
 }
 
 //CONTACT

@@ -82,3 +82,9 @@
 	@include justify-content($justify-content);
 	@include align-items($vertical-align);
 }
+
+@mixin flex-child($basis) {
+	@include flex-grow(1);
+	@include flex-shrink(1);
+	@include flex-basis($basis);
+}

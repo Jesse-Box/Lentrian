@@ -18,7 +18,7 @@
     </script>
     <script type="text/javascript"> //Grid-a-licious Trigger
         $(document).ready(function () {
-          $("#acquire").gridalicious({
+          $("#various").gridalicious({
               gutter: 4,
               width: 100,
               animate: true,
