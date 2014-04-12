@@ -55,7 +55,6 @@ a {
   font-weight: 400;
   color: black;
   margin: 0 0;
-  text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   -moz-font-feature-settings: "kern=1";
@@ -97,8 +96,7 @@ h1 {
 a {
   font-size: 16px;
   line-height: 150%;
-  text-decoration: none;
-  text-align: center; }
+  text-decoration: none; }
 
 html,
 body,
@@ -335,7 +333,6 @@ li {
   font-size: 16px;
   line-height: 150%;
   text-decoration: none;
-  text-align: center;
   margin: 12px; }
   li a {
     opacity: 0.66;
@@ -347,20 +344,21 @@ li {
 section#collections, section#contact {
   width: 95%;
   margin: 0 auto; }
-  section#collections a.item, section#contact a.item {
+  section#collections a, section#contact a {
     margin: 12px;
-    opacity: 0.1;
+    opacity: 0.2;
     padding: 12px; }
-    section#collections a.item img, section#contact a.item img {
+    section#collections a img, section#contact a img {
       width: 100%; }
-    section#collections a.item h6, section#contact a.item h6 {
-      margin-top: 7px; }
-  section#collections a.item:hover, section#contact a.item:hover {
+    section#collections a h6, section#contact a h6 {
+      margin-top: 7px;
+      text-align: center; }
+  section#collections a:hover, section#contact a:hover {
     transition: 0.5s ease-in;
     opacity: 1; }
 
 section#acquire {
-  width: 85%; }
+  width: 97%; }
   section#acquire section#col-wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -455,9 +453,13 @@ section#acquire {
       -ms-flex-align: center;
       margin: 4px; }
       section#acquire section#col-wrapper section.flex-col a {
-        width: 100%; }
+        width: 100%;
+        opacity: 0.2; }
         section#acquire section#col-wrapper section.flex-col a img {
           width: 100%; }
+      section#acquire section#col-wrapper section.flex-col a:hover {
+        transition: 0.5s ease-in;
+        opacity: 1; }
 
 section#contact a {
   font-size: 1.2rem;

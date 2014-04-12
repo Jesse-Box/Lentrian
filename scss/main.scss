@@ -126,9 +126,9 @@ section#collections {
 	width: $fluid - 5%;
 	margin: 0 auto;
 
-	a.item {
+	a {
 		margin: $secondary-spacing;
-		opacity: 0.1;
+		opacity: $clear;
 		padding: $secondary-spacing;
 
 		img {
@@ -137,10 +137,11 @@ section#collections {
 
 		h6 {
 			margin-top: $secondary-spacing - 5px;
+			text-align: center;
 		}
 	}
 
-	a.item:hover {
+	a:hover {
 		transition: $slow;
 		opacity: 1;
 	}
@@ -149,7 +150,7 @@ section#collections {
 //ACQUIRE
 
 section#acquire {
-	width: $fluid - 15%;
+	width: $fluid - 3%;
 
 	section#col-wrapper {
 		@include flex-parent(row, no-wrap, center, flex-start);
@@ -160,10 +161,16 @@ section#acquire {
 
 			a {
 				width: $fluid;
+				opacity: $clear;
 
 				img {
 					width: $fluid;
 				}
+			}
+
+			a:hover {
+				transition: $slow;
+				opacity: 1;
 			}
 		}
 	}	

@@ -3,24 +3,15 @@ $PageTitle = "COLLECTIONS";
 $Container = "collections";
 include('inc/header.php'); ?>
 
-<a 
-	href="#" 
-	class="item"
-	id="collection-1">
+<a href="#" id="collection-1">
   <img src="img/collection-1-thumb.jpg" "alt=collection I">
   <h6>Collection I</h6>
 </a>
-<a 
-	href="#" 
-	class="item"
-	id="collection-2">
+<a href="#" id="collection-2">
   <img src="img/collection-2-thumb.jpg" "alt=collection II">
   <h6>Collection II</h6>
 </a>
-<a 
-	href="#" 
-	class="item"
-	id="collection-3">
+<a href="#" id="collection-3">
   <img src="img/collection-3-thumb.jpg" "alt=collection III">
   <h6>Collection III</h6>
 </a>

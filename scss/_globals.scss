@@ -16,7 +16,6 @@
 	font-weight: 400;
 	color: $primary;
 	margin: 0 0;
-	text-align: center;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	-moz-font-feature-settings: "kern=1"; 
@@ -71,7 +70,6 @@
 @mixin link {
 	@include paragraph;
 	text-decoration: none;
-	text-align: center;
 }
 
 //Flex-box
