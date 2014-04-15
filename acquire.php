@@ -173,20 +173,6 @@ include('inc/header.php'); ?>
 	  	<img src="img/acquire/Lentrian-web-pictures-80.jpg">
 		</a>
 	</section>
-	<section class="flex-col" id="col-13">
-		<a href="#">
-	  	<img src="img/acquire/Lentrian-web-pictures-51.jpg">
-		</a>
-		<a href="#">
-	  	<img src="img/acquire/Lentrian-web-pictures-4.jpg">
-		</a>
-		<a href="#">
-	  	<img src="img/acquire/Lentrian-web-pictures-64.jpg">
-		</a>
-		<a href="#">
-	  	<img src="img/acquire/Lentrian-web-pictures-34.jpg">
-		</a>
-	</section>
 </section>
 <?php 
 include('inc/footer.php'); ?>

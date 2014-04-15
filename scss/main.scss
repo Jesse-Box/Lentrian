@@ -150,7 +150,7 @@ section#collections {
 //ACQUIRE
 
 section#acquire {
-	width: $fluid - 3%;
+	width: $fluid - 10%;
 
 	section#col-wrapper {
 		@include flex-parent(row, no-wrap, center, flex-start);
@@ -161,7 +161,7 @@ section#acquire {
 
 			a {
 				width: $fluid;
-				opacity: $clear;
+				opacity: $v-opaque;
 
 				img {
 					width: $fluid;
@@ -169,7 +169,7 @@ section#acquire {
 			}
 
 			a:hover {
-				transition: $slow;
+				transition: $medium;
 				opacity: 1;
 			}
 		}
