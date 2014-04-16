@@ -5,6 +5,7 @@
 @import "_globals";
 
 //-----USERS-CODE-----//
+
 //TYPOGRAPHY
 p,
 h6,
@@ -49,32 +50,43 @@ a {
 	@include link;
 }
 
+html {
+	@include root-reset;
+}
+
+img {
+	width: $fluid;
+}
+
 html,
 body,
-#container {
-	@include root-reset;
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+	@extend %full-height-and-width;
+}
+
+body,
+section#landing {
 	@include flex-parent;
-	@extend %full-height-and-width;
 }
 
-#collections,
-#acquire, 
-#contact {
+section#collections,
+section#acquire,
+section#contact,
+div#animation-wrapper,
+section#col-wrapper {
 	@include flex-parent(row, no-wrap, center, center);
-	@extend %full-height-and-width;
 }
 
-//MAXIMAGE
+//ANIMATION BANNER
 
-div#holder {
-	width: $fluid - 15%;
-	height: $fluid - 15%;
+div#animation-wrapper {
+	width: 85%;
+	height: 85%;
 	overflow: hidden;
 	margin: auto;
-}
-
-#maximage {
-	position: relative !important;
 }
 
 //NAVIGATION
@@ -99,10 +111,6 @@ img#logo {
 	width: 200px;
 	margin-left: -50px;
 	margin-top: 5px;
-
-	@media screen and (max-width: $mobile) {
-		width: 100px;
-	}
 }
 
 li {
@@ -110,12 +118,12 @@ li {
 	margin: $secondary-spacing;
 
 	a {
-		opacity: 0.66;
+		opacity: $v-opaque;
 		padding: $secondary-spacing;
 	}
 
 	a:hover {
-		transition: $slow;
+		transition: $medium;
 		opacity: 1;
 	}
 }
@@ -123,17 +131,13 @@ li {
 //COLLECTION
 
 section#collections {
-	width: $fluid - 5%;
+	width: 95%;
 	margin: 0 auto;
 
 	a {
 		margin: $secondary-spacing;
 		opacity: $clear;
 		padding: $secondary-spacing;
-
-		img {
-			width: $fluid;
-		}
 
 		h6 {
 			margin-top: $secondary-spacing - 5px;
@@ -142,7 +146,7 @@ section#collections {
 	}
 
 	a:hover {
-		transition: $slow;
+		transition: $medium;
 		opacity: 1;
 	}
 }
@@ -150,10 +154,14 @@ section#collections {
 //ACQUIRE
 
 section#acquire {
-	width: $fluid - 10%;
+	width: 90%;
+
+	@media screen and (min-width: $x-large) {
+		width: 86%;
+	}
 
 	section#col-wrapper {
-		@include flex-parent(row, no-wrap, center, flex-start);
+
 		section.flex-col {
 			@include flex-child(100px);
 			@include flex-parent(column, no-wrap, center, center);
@@ -162,10 +170,6 @@ section#acquire {
 			a {
 				width: $fluid;
 				opacity: $v-opaque;
-
-				img {
-					width: $fluid;
-				}
 			}
 
 			a:hover {
@@ -179,8 +183,8 @@ section#acquire {
 //CONTACT
 
 section#contact {
-	@extend section#collections;
-
+	width: $fluid;
+	
 	a {
 		@include heading-6;
 	}

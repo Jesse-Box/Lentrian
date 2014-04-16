@@ -5,7 +5,7 @@ $body-baseline: 150%;
 $display-baseline: 120%;
 
 //COLORS
-$primary: #000;
+$black: #000;
 
 
 //Spacing
@@ -13,7 +13,7 @@ $primary-spacing: 24px;
 $secondary-spacing: 12px;
 
 //Breakpoints
-$mobile: 500px;
+$x-large: 2400px;
 
 //Dimensions
 $fluid: 100%;
@@ -21,5 +21,4 @@ $fluid: 100%;
 //Transitions
 $clear: 0.2;
 $v-opaque: 0.7;
-$slow: 0.5s ease-in;
 $medium: 0.25s ease-in;

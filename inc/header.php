@@ -7,23 +7,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><?php echo $PageTitle; ?></title>
-    <meta name="description" content="">
-    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="description" content="Lentrian, Fashion Label, Luxury Unisex, Experimental, Unique">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
-    <!--Max Image Stylesheet-->
-    <link rel="stylesheet" href="css/jquery.maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8">
-    <!--Fresco Stylesheet-->
     <link rel="stylesheet" href="css/fresco.css" type="text/css" media="screen">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <!--Max Image Javascript-->
-    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
-    <script src="js/jquery.maximage.min.js" type="text/javascript"></script>
-    <!--Grid-a-licious Javascript-->
-    <script src="js/jquery.grid-a-licious.js" type="text/javascript"></script>
-    <!--Fresco Javascript-->
     <script type="text/javascript" src="js/fresco.js"></script>
     <script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
