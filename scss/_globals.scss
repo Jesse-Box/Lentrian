@@ -1,14 +1,22 @@
 //-----IMPORTS-----//
 @import "_variables";
 
+@import "_flex-box";
+
+
 //-----USERS-CODE-----//
-@include font-face(junction_regularregular, '../fonts/Junction-webfont');
+
+%full-height-and-width {
+	width: 100%;
+	height: 100%;
+}
 
 %font-rule {
-	font-family: $junction;
-	color: $primary;
+	font-family: $courier;
+	font-weight: 400;
+	color: $black;
 	margin: 0 0;
-	text-align: center;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1; 
@@ -62,5 +70,19 @@
 @mixin link {
 	@include paragraph;
 	text-decoration: none;
-	text-align: center;
+}
+
+//Flex-box
+@mixin flex-parent($direction: column, $wrap: nowrap, $justify-content: center, $vertical-align: center) {
+	@include display(flex);
+	@include flex-direction($direction);
+	@include flex-wrap($wrap);
+	@include justify-content($justify-content);
+	@include align-items($vertical-align);
+}
+
+@mixin flex-child($basis) {
+	@include flex-grow(1);
+	@include flex-shrink(1);
+	@include flex-basis($basis);
 }

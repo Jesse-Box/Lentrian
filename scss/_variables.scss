@@ -1,14 +1,24 @@
 //TYPOGRAPHY
-$helvetica-Neue: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$junction: "junction_regularregular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$courier: "Courier New", Courier, monospace;
 $root: 16px;
 $body-baseline: 150%;
 $display-baseline: 120%;
 
 //COLORS
-$primary: #222;
+$black: #000;
 
 
 //Spacing
 $primary-spacing: 24px;
 $secondary-spacing: 12px;
+
+//Breakpoints
+$x-large: 2400px;
+
+//Dimensions
+$fluid: 100%;
+
+//Transitions
+$clear: 0.2;
+$v-opaque: 0.7;
+$medium: 0.25s ease-in;

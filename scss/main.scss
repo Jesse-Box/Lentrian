@@ -5,6 +5,7 @@
 @import "_globals";
 
 //-----USERS-CODE-----//
+
 //TYPOGRAPHY
 p,
 h6,
@@ -49,67 +50,82 @@ a {
 	@include link;
 }
 
+html {
+	@include root-reset;
+}
+
+img {
+	width: $fluid;
+}
+
 html,
 body,
-#container {
-	@include root-reset;
-
-	height: 100%;
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+	@extend %full-height-and-width;
 }
 
-div#holder {
-	width: 80%;
-	height: 80%;
+body,
+section#landing {
+	@include flex-parent;
+}
+
+section#collections,
+section#acquire,
+section#contact,
+div#animation-wrapper,
+section#col-wrapper {
+	@include flex-parent(row, no-wrap, center, center);
+}
+
+//ANIMATION BANNER
+
+div#animation-wrapper {
+	width: 85%;
+	height: 85%;
 	overflow: hidden;
 	margin: auto;
-}
-
-#maximage {
-	position: relative !important;
 }
 
 //NAVIGATION
 
 nav  {
-	width: 100%;
-	position: fixed;
+	@include flex-parent(row);
+	width: $fluid;
+	margin: $primary-spacing 0;
 
-	div.logo-section {
-		width: 100%;
-		margin-top: $primary-spacing;
-		text-align: center;
-
-		img {
-			opacity: 0.5;
-		}		
+	ul {
+		@include flex-parent (row, no-wrap, space-between, center);
+		width: $fluid;
 	}
+}
 
-	ul.top {
-		width: 100%;
-		position: absolute;
-		left: 0px;
-		top: 0px;
-	}	
+nav.bottom-nav > ul {
+	@include flex-parent (row, no-wrap, flex-end, center);
+	width: $fluid;
+}
+
+img#logo {
+	width: 200px;
+	margin-left: -50px;
+	margin-top: 5px;
 }
 
 li {
-	display: inline-block;
-	margin: $primary-spacing;
-}
+	@include link;
+	margin: $secondary-spacing;
 
-li:first-child {
-	text-align: left;
-}
+	a {
+		opacity: $v-opaque;
+		padding: $secondary-spacing;
+	}
 
-li:last-child {
-	float: right;
-}
-
-nav.bottom-nav {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
+	a:hover {
+		transition: $medium;
+		opacity: 1;
+	}
 }
 
 //COLLECTION
@@ -117,4 +133,59 @@ nav.bottom-nav {
 section#collections {
 	width: 95%;
 	margin: 0 auto;
+
+	a {
+		margin: $secondary-spacing;
+		opacity: $clear;
+		padding: $secondary-spacing;
+
+		h6 {
+			margin-top: $secondary-spacing - 5px;
+			text-align: center;
+		}
+	}
+
+	a:hover {
+		transition: $medium;
+		opacity: 1;
+	}
+}
+
+//ACQUIRE
+
+section#acquire {
+	width: 90%;
+
+	@media screen and (min-width: $x-large) {
+		width: 86%;
+	}
+
+	section#col-wrapper {
+
+		section.flex-col {
+			@include flex-child(100px);
+			@include flex-parent(column, no-wrap, center, center);
+			margin: 4px;
+
+			a {
+				width: $fluid;
+				opacity: $v-opaque;
+			}
+
+			a:hover {
+				transition: $medium;
+				opacity: 1;
+			}
+		}
+	}	
+}
+
+//CONTACT
+
+section#contact {
+	width: $fluid;
+	
+	a {
+		@include heading-6;
+	}
 }
