@@ -83,10 +83,11 @@ section#col-wrapper {
 //ANIMATION BANNER
 
 div#animation-wrapper {
-	width: 85%;
-	height: 85%;
+	width: 35%;
+	height: 35%;
 	overflow: hidden;
 	margin: auto;
+	opacity: 0.8;
 }
 
 //NAVIGATION
@@ -108,7 +109,7 @@ nav.bottom-nav > ul {
 }
 
 img#logo {
-	width: 200px;
+	width: 150px;
 	margin-left: -50px;
 	margin-top: 5px;
 }
@@ -139,7 +140,7 @@ section#collections {
 		opacity: $clear;
 		padding: $secondary-spacing;
 
-		h6 {
+		h5 {
 			margin-top: $secondary-spacing - 5px;
 			text-align: center;
 		}
@@ -186,6 +187,6 @@ section#contact {
 	width: $fluid;
 	
 	a {
-		@include heading-6;
+		@include heading-5;
 	}
 }

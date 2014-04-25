@@ -66,7 +66,7 @@ a {
   text-rendering: optimizeLegibility; }
 
 p {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 150%; }
 
 h6 {
@@ -95,12 +95,12 @@ h1 {
   line-height: 120%; }
 
 a {
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 150%;
   text-decoration: none; }
 
 html {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 150%; }
 
 img {
@@ -194,10 +194,11 @@ section#col-wrapper {
   -ms-flex-align: center; }
 
 div#animation-wrapper {
-  width: 85%;
-  height: 85%;
+  width: 35%;
+  height: 35%;
   overflow: hidden;
-  margin: auto; }
+  margin: auto;
+  opacity: 0.8; }
 
 nav {
   display: -webkit-box;
@@ -326,12 +327,12 @@ nav.bottom-nav > ul {
   width: 100%; }
 
 img#logo {
-  width: 200px;
+  width: 150px;
   margin-left: -50px;
   margin-top: 5px; }
 
 li {
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 150%;
   text-decoration: none;
   margin: 12px; }
@@ -349,7 +350,7 @@ section#collections {
     margin: 12px;
     opacity: 0.2;
     padding: 12px; }
-    section#collections a h6 {
+    section#collections a h5 {
       margin-top: 7px;
       text-align: center; }
   section#collections a:hover {
@@ -424,6 +425,5 @@ section#acquire {
 section#contact {
   width: 100%; }
   section#contact a {
-    font-size: 1.2rem;
-    line-height: 150%;
-    font-weight: 400; }
+    font-size: 1.4rem;
+    line-height: 150%; }

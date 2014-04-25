@@ -2,9 +2,9 @@
 $PageTitle = "LENTRIAN - CONTACT";
 $Container = "contact";
 include('inc/header.php'); ?>
-<h6>
-	<a href="mailto:sales@lentrian.com">Email</a> + 
+<h5>
+	<a href="mailto:info@lentrian.com">Email</a> / 
 	<a href="https://www.facebook.com/Lentrian">Facebook</a>
-</h6>
+</h5>
 <?php 
 include('inc/footer.php'); ?>

@@ -5,15 +5,15 @@ include('inc/header.php'); ?>
 
 <a href="#" id="collection-1">
   <img src="img/collection-1-thumb.jpg" "alt=collection I">
-  <h6>Collection I</h6>
+  <h5>Collection I</h5>
 </a>
 <a href="#" id="collection-2">
   <img src="img/collection-2-thumb.jpg" "alt=collection II">
-  <h6>Collection II</h6>
+  <h5>Collection II</h5>
 </a>
 <a href="#" id="collection-3">
   <img src="img/collection-3-thumb.jpg" "alt=collection III">
-  <h6>Collection III</h6>
+  <h5>Collection III</h5>
 </a>
 <script type="text/javascript"> //Fresco Collection-1 Trigger 
   jQuery(document).ready(function($) {

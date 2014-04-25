@@ -68,7 +68,7 @@
 }	
 
 @mixin link {
-	@include paragraph;
+	@include heading-5;
 	text-decoration: none;
 }
 

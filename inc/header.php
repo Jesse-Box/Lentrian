@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><?php echo $PageTitle; ?></title>
-    <meta name="description" content="Lentrian, Fashion Label, Luxury Unisex, Experimental, Unique">
+    <meta name="description" content="Lentrian, Fashion, Label, Luxury, Unisex, Experimental, Unique">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
