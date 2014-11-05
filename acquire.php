@@ -49,7 +49,7 @@ include('inc/header.php'); ?>
 	  	<img src="img/acquire/2-11-14/lentrian-web_70-2.jpg">
 		</a>
 		<!--NEW 2.11.14-->
-		<a href="http://store.lentrian.com/products/long-cardigan-with-leather-details">
+		<a href="http://store.lentrian.com/products/object-dyed-linnen-overcoat">
 	  	<img src="img/acquire/2-11-14/lentrian-web_102.jpg">
 		</a>
 		<a href="http://store.lentrian.com/products/lss14-swt">
@@ -69,7 +69,7 @@ include('inc/header.php'); ?>
 		<a href="http://store.lentrian.com/products/lss14-swt-grey">
 	  	<img src="img/acquire/2-11-14/lentrian-web_22.jpg">
 		</a>
-		<a href="http://store.lentrian.com/products/lss14-sht2">
+		<a href="http://store.lentrian.com/products/double-buttoned-linen-jacket">
 	  	<img src="img/acquire/11-04-14/Lentrian-web-pictures-37.jpg">
 		</a>
 	</section>
@@ -117,7 +117,7 @@ include('inc/header.php'); ?>
 	  	<img src="img/acquire/2-11-14/lentrian-web_18.jpg">
 		</a>
 		<!--NEW 2.11.14-->
-		<a href="http://store.lentrian.com/long-cardigan-with-leather-details">
+		<a href="http://store.lentrian.com/products/long-cardigan-with-leather-details">
 	  	<img src="img/acquire/2-11-14/lentrian-web_13-2.jpg">
 		</a>
 		<a href="http://store.lentrian.com/products/black-rough-linen-shirt-with-hidden-metal-zipper">
@@ -137,7 +137,7 @@ include('inc/header.php'); ?>
 		<a href="http://store.lentrian.com/products/rough-linen-shirt-with-hidden-metal-zipper-1">
 	  	<img src="img/acquire/2-11-14/lentrian-web_111-2.jpg">
 		</a>
-		<a href="http://store.lentrian.com/products/grey-object-dyed-linen-pant">
+		<a href="http://store.lentrian.com/products/grey-object-dyed-linen-pants">
 	  	<img src="img/acquire/2-11-14/lentrian-web_49.jpg">
 		</a>
 	</section>
