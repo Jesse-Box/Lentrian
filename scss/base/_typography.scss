@@ -1,0 +1,58 @@
+/*--------------------Imports--------------------*/
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
+
+/*--------------------Code--------------------*/
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+	@extend %font-rule;
+}
+
+p {
+	@include paragraph;
+}
+
+h6 {
+	@include heading-6;
+}
+
+h5 {
+	@include heading-5;
+}
+
+h4 {
+	@include heading-4;
+}
+
+h3 {
+	@include heading-3;
+}
+
+h2 {
+	@include heading-2;
+}
+
+h1 {
+	@include heading-1;
+}
+
+a {
+	@include link;
+}
+
+html {
+	@include root-reset;
+}
+
+img {
+	width: $fluid;
+}

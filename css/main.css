@@ -1,3 +1,4 @@
+/*--------------------Imports--------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -35,6 +36,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*--------------------Imports--------------------*/
+/*-----Imports-----*/
 html,
 body,
 section#landing,
@@ -52,9 +55,9 @@ h3,
 h2,
 h1,
 a {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
-  color: black;
+  color: #000;
   margin: 0 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -65,6 +68,7 @@ a {
   font-feature-settings: "kern";
   text-rendering: optimizeLegibility; }
 
+/*--------------------Code--------------------*/
 p {
   font-size: 10px;
   line-height: 150%; }
@@ -106,100 +110,113 @@ html {
 img {
   width: 100%; }
 
+/*-----Imports-----*/
+html,
 body,
-section#landing {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-lines: single;
-  -moz-box-lines: single;
-  box-lines: single;
-  -webkit-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center; }
-
+section#landing,
 section#collections,
 section#acquire,
-section#contact,
-div#animation-wrapper,
-section#col-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-lines: no-wrap;
-  -moz-box-lines: no-wrap;
-  box-lines: no-wrap;
-  -webkit-flex-wrap: no-wrap;
-  -moz-flex-wrap: no-wrap;
-  -ms-flex-wrap: no-wrap;
-  flex-wrap: no-wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center; }
+section#contact {
+  width: 100%;
+  height: 100%; }
 
-div#animation-wrapper {
-  width: 35%;
-  height: 35%;
-  overflow: hidden;
-  margin: auto;
-  opacity: 0.8; }
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
 
+/*--------------------Imports--------------------*/
+/*--------------------Imports--------------------*/
+/*-----Imports-----*/
+html,
+body,
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+  width: 100%;
+  height: 100%; }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+/*--------------------Code--------------------*/
+p {
+  font-size: 10px;
+  line-height: 150%; }
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 150%; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 120%; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 120%; }
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 120%; }
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 120%; }
+
+a {
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-decoration: none; }
+
+html {
+  font-size: 10px;
+  line-height: 150%; }
+
+img {
+  width: 100%; }
+
+/*--------------------Code--------------------*/
 nav {
   display: -webkit-box;
   display: -moz-box;
@@ -326,37 +343,157 @@ nav.bottom-nav > ul {
   -ms-flex-align: center;
   width: 100%; }
 
-img#logo {
-  width: 150px;
-  margin-left: -50px;
-  margin-top: 5px; }
+div#animation-wrapper {
+  width: 35%;
+  height: 35%;
+  overflow: hidden;
+  margin: auto;
+  opacity: 0.8; }
 
-li {
+/*--------------------Imports--------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--------------------Imports--------------------*/
+/*-----Imports-----*/
+html,
+body,
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+  width: 100%;
+  height: 100%; }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+/*--------------------Code--------------------*/
+p {
+  font-size: 10px;
+  line-height: 150%; }
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 150%; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 120%; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 120%; }
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 120%; }
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 120%; }
+
+a {
   font-size: 1.4rem;
   line-height: 150%;
-  text-decoration: none;
-  margin: 12px; }
-  li a {
-    opacity: 0.7;
-    padding: 12px; }
-  li a:hover {
-    transition: 0.25s ease-in;
-    opacity: 1; }
+  text-decoration: none; }
 
-section#collections {
-  width: 95%;
-  margin: 0 auto; }
-  section#collections a {
-    margin: 12px;
-    opacity: 0.2;
-    padding: 12px; }
-    section#collections a h5 {
-      margin-top: 7px;
-      text-align: center; }
-  section#collections a:hover {
-    transition: 0.25s ease-in;
-    opacity: 1; }
+html {
+  font-size: 10px;
+  line-height: 150%; }
 
+img {
+  width: 100%; }
+
+/*-----Imports-----*/
+html,
+body,
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+  width: 100%;
+  height: 100%; }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+/*--------------------Code--------------------*/
 section#acquire {
   width: 90%; }
   @media screen and (min-width: 2400px) {
@@ -422,8 +559,205 @@ section#acquire {
       transition: 0.25s ease-in;
       opacity: 1; }
 
+/*--------------------Imports--------------------*/
+/*--------------------Imports--------------------*/
+/*-----Imports-----*/
+html,
+body,
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+  width: 100%;
+  height: 100%; }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+/*--------------------Code--------------------*/
+p {
+  font-size: 10px;
+  line-height: 150%; }
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 150%; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 120%; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 120%; }
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 120%; }
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 120%; }
+
+a {
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-decoration: none; }
+
+html {
+  font-size: 10px;
+  line-height: 150%; }
+
+img {
+  width: 100%; }
+
+/*-----Imports-----*/
+html,
+body,
+section#landing,
+section#collections,
+section#acquire,
+section#contact {
+  width: 100%;
+  height: 100%; }
+
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+a {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility; }
+
+/*--------------------Code--------------------*/
 section#contact {
   width: 100%; }
   section#contact a {
     font-size: 1.4rem;
     line-height: 150%; }
+
+/*--------------------Code--------------------*/
+body,
+section#landing {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+
+section#collections,
+section#acquire,
+section#contact,
+div#animation-wrapper,
+section#col-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: no-wrap;
+  -moz-box-lines: no-wrap;
+  box-lines: no-wrap;
+  -webkit-flex-wrap: no-wrap;
+  -moz-flex-wrap: no-wrap;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+
+/*# sourceMappingURL=main.css.map */

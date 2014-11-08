@@ -1,0 +1,90 @@
+/*-----Imports-----*/
+//Helpers
+@import "_variables";
+
+//Libraries
+@import "libraries/bourbon/_bourbon";
+
+
+//-----USERS-CODE-----//
+
+%full-height-and-width {
+	width: 100%;
+	height: 100%;
+}
+
+%font-rule {
+	font-family: $helvetica;
+	font-weight: 400;
+	color: $black;
+	margin: 0 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-moz-font-feature-settings: "kern=1"; 
+	-ms-font-feature-settings: "kern" 1; 
+	-o-font-feature-settings: "kern"; 
+	-webkit-font-feature-settings:"kern"; 
+	font-feature-settings:"kern";
+	text-rendering: optimizeLegibility;
+}
+
+@mixin root-reset {
+	font-size: $root;
+	line-height: $body-baseline;	
+}
+
+@mixin paragraph {
+	font-size: $root;
+	line-height: $body-baseline;
+}
+
+@mixin heading-6 {
+	font-size: 1.2rem;
+	line-height: $body-baseline;
+	font-weight: 400;
+}
+
+@mixin heading-5 {
+	font-size: 1.4rem;
+	line-height: $body-baseline;
+}
+
+@mixin heading-4 {
+	font-size: 1.6rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-3 {
+	font-size: 1.8rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-2 {
+	font-size: 2.1rem;
+	line-height: $display-baseline;
+}
+
+@mixin heading-1 {
+	font-size: 2.4rem;
+	line-height: $display-baseline;
+}	
+
+@mixin link {
+	@include heading-5;
+	text-decoration: none;
+}
+
+//Flex-box
+@mixin flex-parent($direction: column, $wrap: nowrap, $justify-content: center, $vertical-align: center) {
+	@include display(flex);
+	@include flex-direction($direction);
+	@include flex-wrap($wrap);
+	@include justify-content($justify-content);
+	@include align-items($vertical-align);
+}
+
+@mixin flex-child($basis) {
+	@include flex-grow(1);
+	@include flex-shrink(1);
+	@include flex-basis($basis);
+}

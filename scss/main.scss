@@ -1,62 +1,25 @@
-//-----IMPORTS-----/
-@import "reset";
-@import "_font-face";
-@import "_variables";
-@import "_globals";
+/*--------------------Imports--------------------*/
 
-//-----USERS-CODE-----//
+//Base
+@import "base/_reset";
+@import "base/_typography";
 
-//TYPOGRAPHY
-p,
-h6,
-h5,
-h4,
-h3,
-h2,
-h1,
-a {
-	@extend %font-rule;
-}
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
 
-p {
-	@include paragraph;
-}
+//Components
+@import "components/_navigation";
 
-h6 {
-	@include heading-6;
-}
+//Libraries
+@import "libraries/bourbon/_bourbon";
 
-h5 {
-	@include heading-5;
-}
+//Pages
+@import "pages/_home";
+@import "pages/_acquire";
+@import "pages/_contact";
 
-h4 {
-	@include heading-4;
-}
-
-h3 {
-	@include heading-3;
-}
-
-h2 {
-	@include heading-2;
-}
-
-h1 {
-	@include heading-1;
-}
-
-a {
-	@include link;
-}
-
-html {
-	@include root-reset;
-}
-
-img {
-	width: $fluid;
-}
+/*--------------------Code--------------------*/
 
 html,
 body,
@@ -78,115 +41,4 @@ section#contact,
 div#animation-wrapper,
 section#col-wrapper {
 	@include flex-parent(row, no-wrap, center, center);
-}
-
-//ANIMATION BANNER
-
-div#animation-wrapper {
-	width: 35%;
-	height: 35%;
-	overflow: hidden;
-	margin: auto;
-	opacity: 0.8;
-}
-
-//NAVIGATION
-
-nav  {
-	@include flex-parent(row);
-	width: $fluid;
-	margin: $primary-spacing 0;
-
-	ul {
-		@include flex-parent (row, no-wrap, space-between, center);
-		width: $fluid;
-	}
-}
-
-nav.bottom-nav > ul {
-	@include flex-parent (row, no-wrap, flex-end, center);
-	width: $fluid;
-}
-
-img#logo {
-	width: 150px;
-	margin-left: -50px;
-	margin-top: 5px;
-}
-
-li {
-	@include link;
-	margin: $secondary-spacing;
-
-	a {
-		opacity: $v-opaque;
-		padding: $secondary-spacing;
-	}
-
-	a:hover {
-		transition: $medium;
-		opacity: 1;
-	}
-}
-
-//COLLECTION
-
-section#collections {
-	width: 95%;
-	margin: 0 auto;
-
-	a {
-		margin: $secondary-spacing;
-		opacity: $clear;
-		padding: $secondary-spacing;
-
-		h5 {
-			margin-top: $secondary-spacing - 5px;
-			text-align: center;
-		}
-	}
-
-	a:hover {
-		transition: $medium;
-		opacity: 1;
-	}
-}
-
-//ACQUIRE
-
-section#acquire {
-	width: 90%;
-
-	@media screen and (min-width: $x-large) {
-		width: 86%;
-	}
-
-	section#col-wrapper {
-
-		section.flex-col {
-			@include flex-child(100px);
-			@include flex-parent(column, no-wrap, center, center);
-			margin: 4px;
-
-			a {
-				width: $fluid;
-				opacity: $v-opaque;
-			}
-
-			a:hover {
-				transition: $medium;
-				opacity: 1;
-			}
-		}
-	}	
-}
-
-//CONTACT
-
-section#contact {
-	width: $fluid;
-	
-	a {
-		@include heading-5;
-	}
 }

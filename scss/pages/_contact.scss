@@ -1,0 +1,21 @@
+/*--------------------Imports--------------------*/
+
+//Base
+@import "base/_typography";
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
+
+//Libraries
+@import "libraries/bourbon/_bourbon";
+
+/*--------------------Code--------------------*/
+
+section#contact {
+	width: $fluid;
+	
+	a {
+		@include heading-5;
+	}
+}

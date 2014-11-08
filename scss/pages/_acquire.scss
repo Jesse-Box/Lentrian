@@ -1,0 +1,41 @@
+/*--------------------Imports--------------------*/
+
+//Base
+@import "base/_reset";
+@import "base/_typography";
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
+
+//Libraries
+@import "libraries/bourbon/_bourbon";
+
+/*--------------------Code--------------------*/
+
+section#acquire {
+	width: 90%;
+
+	@media screen and (min-width: $x-large) {
+		width: 86%;
+	}
+
+	section#col-wrapper {
+
+		section.flex-col {
+			@include flex-child(100px);
+			@include flex-parent(column, no-wrap, center, center);
+			margin: 4px;
+
+			a {
+				width: $fluid;
+				opacity: $v-opaque;
+			}
+
+			a:hover {
+				transition: $medium;
+				opacity: 1;
+			}
+		}
+	}	
+}

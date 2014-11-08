@@ -1,0 +1,28 @@
+/*--------------------Imports--------------------*/
+
+//Base
+@import "base/_typography";
+
+//Helpers
+@import "helpers/_variables";
+
+//Libraries
+@import "libraries/bourbon/_bourbon";
+
+/*--------------------Code--------------------*/
+
+nav  {
+	@include flex-parent(row);
+	width: $fluid;
+	margin: $primary-spacing 0;
+
+	ul {
+		@include flex-parent (row, no-wrap, space-between, center);
+		width: $fluid;
+	}
+}
+
+nav.bottom-nav > ul {
+	@include flex-parent (row, no-wrap, flex-end, center);
+	width: $fluid;
+}
