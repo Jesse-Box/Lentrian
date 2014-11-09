@@ -1,44 +1,19 @@
-/*--------------------Imports--------------------*/
-
 //Base
 @import "base/_reset";
-@import "base/_typography";
 
 //Helpers
-@import "helpers/_variables";
 @import "helpers/_mixins";
 
 //Components
 @import "components/_navigation";
 
 //Libraries
-@import "libraries/bourbon/_bourbon";
+@import "libraries/bourbon/_bourbon";		//Bourbon
+@import "libraries/neat/_grid-settings";	//Custom Neat grid rules
+@import "libraries/neat/_neat";				//Neat
+@import "libraries/base/_typography";		//Bitters
 
 //Pages
 @import "pages/_home";
 @import "pages/_acquire";
 @import "pages/_contact";
-
-/*--------------------Code--------------------*/
-
-html,
-body,
-section#landing,
-section#collections,
-section#acquire,
-section#contact {
-	@extend %full-height-and-width;
-}
-
-body,
-section#landing {
-	@include flex-parent;
-}
-
-section#collections,
-section#acquire,
-section#contact,
-div#animation-wrapper,
-section#col-wrapper {
-	@include flex-parent(row, no-wrap, center, center);
-}

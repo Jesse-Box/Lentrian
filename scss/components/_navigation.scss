@@ -1,15 +1,6 @@
-/*--------------------Imports--------------------*/
-
-//Base
-@import "base/_typography";
-
-//Helpers
-@import "helpers/_variables";
-
 //Libraries
 @import "libraries/bourbon/_bourbon";
-
-/*--------------------Code--------------------*/
+@import "libraries/base/_typography";		//Bitters
 
 nav  {
 	@include flex-parent(row);
