@@ -2,8 +2,6 @@
 $PageTitle = "LENTRIAN - ACQUIRE";
 $Container = "acquire";
 include('inc/header.php'); ?>
-
-<section class="container">
 	<a class="shop-item" href="http://store.lentrian.com/products/asymmetrical-lamb-leather-jacket">
   		<img src="img/acquire/2-11-14/lentrian-web_19-2.jpg">
 	</a>
@@ -148,6 +146,5 @@ include('inc/header.php'); ?>
 	<a class="shop-item" href="http://store.lentrian.com/products/asymmetrical-lamb-leather-jacket">
   		<img src="img/acquire/2-11-14/lentrian-web_23-2.jpg">
 	</a>
-</section>
 <?php 
 include('inc/footer.php'); ?>

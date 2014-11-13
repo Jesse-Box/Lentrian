@@ -57,81 +57,70 @@ a {
   font-feature-settings: "kern";
   text-rendering: optimizeLegibility; }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  background-color: white;
-  color: #333;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
+/*--------------------Imports--------------------*/
+/*-----Imports-----*/
+p,
+h6,
 h5,
-h6 {
+h4,
+h3,
+h2,
+h1,
+a {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  line-height: 1.25;
-  margin: 0;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
   text-rendering: optimizeLegibility; }
 
-h1 {
-  font-size: 2.25em; }
-
-h2 {
-  font-size: 2em; }
-
-h3 {
-  font-size: 1.75em; }
-
-h4 {
-  font-size: 1.5em; }
-
-h5 {
-  font-size: 1.25em; }
+/*--------------------Code--------------------*/
+p {
+  font-size: 16px;
+  line-height: 150%; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400; }
 
-p {
-  margin: 0 0 0.75em; }
+h5 {
+  font-size: 1.4rem;
+  line-height: 150%; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 120%; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 120%; }
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 120%; }
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 120%; }
 
 a {
-  -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-  color: #477DCA;
+  font-size: 1.4rem;
+  line-height: 150%;
   text-decoration: none; }
-  a:hover {
-    color: #2c5999; }
-  a:active, a:focus {
-    color: #2c5999;
-    outline: none; }
 
-hr {
-  border-bottom: 1px solid #DDD;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  margin: 1.5em 0; }
+html {
+  font-size: 16px;
+  line-height: 150%; }
 
-img,
-picture {
-  margin: 0;
-  max-width: 100%; }
-
-blockquote {
-  border-left: 2px solid #DDD;
-  color: #595959;
-  margin: 1.5em 0;
-  padding-left: 0.75em; }
-
-cite {
-  color: #737373;
-  font-style: italic; }
-  cite:before {
-    content: "\2014 \00A0"; }
+img {
+  width: 100%; }
 
 nav {
   display: -webkit-box;
