@@ -1,17 +1,20 @@
-//Base
+//Reset
 @import "base/_reset";
+
+//Libraries
+@import "libraries/bourbon/_bourbon";		//Bourbon
+@import "libraries/neat/_grid-settings";	//Custom Neat grid rules
+@import "libraries/neat/_neat";				//Neat
+
+//Base
+@import "base/_variables";					//Bitters
+@import "base/_typography";					//Bitters
 
 //Helpers
 @import "helpers/_mixins";
 
 //Components
 @import "components/_navigation";
-
-//Libraries
-@import "libraries/bourbon/_bourbon";		//Bourbon
-@import "libraries/neat/_grid-settings";	//Custom Neat grid rules
-@import "libraries/neat/_neat";				//Neat
-@import "base/_typography";					//Bitters
 
 //Pages
 @import "pages/_home";

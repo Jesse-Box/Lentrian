@@ -1,15 +1,14 @@
-//Base
-@import "base/_reset";
-
-//Helpers
-@import "helpers/_variables";
-@import "helpers/_mixins";
-
 //Libraries
 @import "libraries/bourbon/_bourbon";		//Bourbon
 @import "libraries/neat/_grid-settings";	//Custom Neat grid rules
 @import "libraries/neat/_neat";				//Neat
+
+//Base
 @import "base/_typography";					//Bitters
+
+//Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
 
 section#acquire {
 	@include outer-container;
