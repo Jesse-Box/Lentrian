@@ -6,7 +6,7 @@
 
 //Libraries
 @import "libraries/bourbon/_bourbon";		//Bourbon
-@import "libraries/base/_typography";		//Bitters
+@import "base/_typography";					//Bitters
 
 nav  {
 	@include flex-parent(row);
