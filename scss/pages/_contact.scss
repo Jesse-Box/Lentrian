@@ -1,14 +1,13 @@
 /*--------------------Imports--------------------*/
-
 //Base
-@import "base/_typography";
 
 //Helpers
 @import "helpers/_variables";
 @import "helpers/_mixins";
 
 //Libraries
-@import "libraries/bourbon/_bourbon";
+@import "libraries/bourbon/_bourbon";		//Bourbon
+@import "libraries/base/_typography";		//Bitters
 
 /*--------------------Code--------------------*/
 
