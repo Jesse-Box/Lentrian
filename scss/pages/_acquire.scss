@@ -12,30 +12,27 @@
 
 section#acquire {
 	@include outer-container;
+	margin: 5%;
 }
 
 .shop-item {
 	@include media($mobile) {
-	  	@include span-columns(2);
-
-	  	&:nth-child(2n+2) {
-	  		@include omega;
-	  	}
+		@include span-columns(4);
+		//@include omega(4n);
+		height: 75px;
 	}
-
 	@include media($tablet) {
-	  	@include span-columns(4);
-
-	  	&:nth-child(2n+2) {
-	  		@include omega;
-	  	}
+		@include span-columns(4);
+		@include omega(2n);
+		height: 150px;
 	}
-	
-  	@include span-columns(2);
+	@include media($laptop) {
+		@include span-columns(4);
+		@include omega(3n);
+		height: 200px !important; 
+	}	
 
-  	&:nth-child(6n+6) {
-  		@include omega;
-  	}
+
 
 	img {
 			max-width: 100%;
